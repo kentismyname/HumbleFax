@@ -1,0 +1,72 @@
+#form-content {
+  position: relative;
+  padding: 20px;
+  form {
+    padding: 10px;
+    input {
+      display: block;
+      width: 400px;
+      padding: 10px;
+      font-size: getSize("def-1");
+      outline: none;
+      border: 1px solid getColor("def-3");
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px;
+      background: getColor("def-1");
+      color: getColor("def-0");
+      width: 400px;
+      outline: none;
+      border: 1px solid getColor("def-1");
+      margin-bottom: 10px;
+      font-size: getSize("def-1");
+      cursor: pointer;
+    }
+    .lbl {
+      font-size: getSize("def-1");
+      color: getColor("def-4");
+      margin-bottom: 10px;
+    }
+    select {
+      display: block;
+      width: 400px;
+      padding: 10px;
+      font-size: getSize("def-1");
+      outline: none;
+      border: 1px solid getColor("def-3");
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: getSize("def-3");
+      color: getColor("def-4");
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      figure{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+    textarea {
+      font-size: getSize("def-1");
+      display: block;
+      font-size: getSize("def-1");
+      border: 1px solid getColor("def-3");
+      width: 400px;
+      max-width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      outline: none;
+      resize: none;
+      height: 100px;
+    }
+  }
+}

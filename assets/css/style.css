@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#form-content {
+  position: relative;
+  padding: 20px;
+}
+#form-content form {
+  padding: 10px;
+}
+#form-content form input {
+  display: block;
+  width: 400px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #f1f0f5;
+  margin-bottom: 10px;
+}
+#form-content form button {
+  padding: 10px;
+  background: #456dde;
+  color: #ffffff;
+  width: 400px;
+  outline: none;
+  border: 1px solid #456dde;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+#form-content form .lbl {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+#form-content form select {
+  display: block;
+  width: 400px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #f1f0f5;
+  margin-bottom: 10px;
+}
+#form-content form .title {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#form-content form .title figure {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+#form-content form .title figure img {
+  width: 100%;
+  height: 100%;
+}
+#form-content form textarea {
+  font-size: 14px;
+  display: block;
+  font-size: 14px;
+  border: 1px solid #f1f0f5;
+  width: 400px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  outline: none;
+  resize: none;
+  height: 100px;
+}
+
+#dashboard-layout {
+  position: relative;
+  width: 100%;
+}
+#dashboard-layout .content {
+  display: block;
+  min-height: 100vh;
+}
+#dashboard-layout .content.is-flex {
+  display: flex;
+}
+#dashboard-layout .content .field {
+  display: block;
+}
+#dashboard-layout .content .field.left {
+  min-width: 250px;
+}
+#dashboard-layout .content .field.right {
+  flex-grow: 1;
+}
+#dashboard-layout .content .field.has-bc {
+  background: #456dde;
+}
+#dashboard-layout .content .field .navigation {
+  overflow-y: auto;
+  color: #ffffff;
+  height: 100%;
+}
+#dashboard-layout .content .field .navigation .sub-field {
+  display: block;
+}
+#dashboard-layout .content .field .navigation .sub-field.pad {
+  padding: 20px 30px 15px 30px;
+}
+#dashboard-layout .content .field .navigation .sub-field .separator-line {
+  border-bottom: 1px solid rgba(242, 241, 242, 0.3137254902);
+}
+#dashboard-layout .content .field .navigation .sub-field .logo figure {
+  width: 130px;
+}
+#dashboard-layout .content .field .navigation .sub-field .logo figure img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group {
+  padding: 0 5px;
+  display: block;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .group-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item {
+  opacity: 0.6;
+  margin-top: 15px;
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item.is-strong {
+  opacity: unset;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item.is-strong span {
+  font-weight: 800;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item .icon figure {
+  width: 20px;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item .icon figure img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item .is-strong {
+  font-weight: 700;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item span {
+  font-size: 14px;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item:hover {
+  opacity: unset;
+}
+#dashboard-layout .content .field .navigation .sub-field .menu .group .menu-item:hover span {
+  font-weight: 800;
+}
+
+#dashboard-header {
+  width: 100%;
+  max-width: 100%;
+}
+#dashboard-header .has-bc {
+  background: #f1f0f5 !important;
+}
+#dashboard-header .has-bc2 {
+  background: #f7f6f9 !important;
+}
+#dashboard-header .pad {
+  padding: 18px 20px 18px 20px;
+}
+#dashboard-header .pad2 {
+  padding: 8px 30px 8px 30px;
+}
+#dashboard-header .field {
+  display: block;
+}
+#dashboard-header .field.has-bords {
+  border: 1px solid #eaeaea;
+}
+#dashboard-header .field .arr-back {
+  cursor: pointer;
+  margin-top: 2px;
+}
+#dashboard-header .field .arr-back figure {
+  width: 20px;
+  height: 20px;
+}
+#dashboard-header .field .arr-back figure img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#dashboard-header .field .navs {
+  display: flex;
+  gap: 25px;
+}
+#dashboard-header .field .navs .has-curs {
+  cursor: pointer;
+}
+#dashboard-header .field .navs .has-curs:hover {
+  color: #456dde;
+}
+#dashboard-header .field .navs .item {
+  width: 70px;
+}
+#dashboard-header .field .navs .item.is-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+#dashboard-header .field .navs .item ._icon {
+  display: flex;
+  justify-content: center;
+}
+#dashboard-header .field .navs .item ._icon .sml {
+  width: 20px !important;
+  height: 20px !important;
+}
+#dashboard-header .field .navs .item ._icon .mid {
+  width: 40px !important;
+}
+#dashboard-header .field .navs .item ._icon figure {
+  width: 28px;
+  height: 28px;
+}
+#dashboard-header .field .navs .item ._icon figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#dashboard-header .field .navs .item p {
+  text-align: center;
+  font-size: 11px;
+}
+#dashboard-header .field .navs .item .lbl {
+  font-size: 14px;
+}
+#dashboard-header .field.is-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+#dashboard-header .field .group {
+  display: block;
+}
+#dashboard-header .field .group.is-flex {
+  display: flex;
+}
+#dashboard-header .field .group .group-title {
+  font-size: 21px;
+}
+#dashboard-header .field .group .icon figure {
+  width: 20px;
+  height: 20px;
+}
+#dashboard-header .field .group .icon figure img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#dashboard-header .field .group .spc-lft {
+  margin-left: 20px;
+}
+#dashboard-header .field .group .section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#dashboard-header .field .group .line {
+  height: 0.7em;
+  width: 1px;
+  background-color: #c6c3dc;
+}
+#dashboard-header .field .group .full-line {
+  height: 50px;
+  width: 1px;
+  position: absolute;
+  background-color: #eaeaea;
+}
+#dashboard-header .field .group .section-title {
+  font-size: 21px;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 500;
+}
+#dashboard-header .field .group .sub-lbl {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#component-body {
+  padding: 30px;
+}
+#component-body .is-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+#component-body .box {
+  position: relative;
+  display: block;
+}
+#component-body .pdf-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: center;
+}
+#component-body .details {
+  width: 500px;
+  margin-top: 0;
+  border: 1px solid #f1f0f5;
+  padding: 0 8px;
+  margin-bottom: 10px;
+}
+#component-body .details .info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f1f0f5;
+}
+#component-body .details .info .rmv-wd {
+  width: unset;
+}
+#component-body .details .info .hlt {
+  color: #456dde;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#component-body .details .info p {
+  width: 50%;
+  font-size: 14px;
+}
+
+#pdf-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pdf-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.pdf-card {
+  position: relative;
+}
+.pdf-card .upper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.pdf-card .upper p {
+  font-size: 14px;
+}
+.pdf-card .head {
+  display: block;
+  background: #92ccff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.pdf-card .head.vwr {
+  background: #60b4ff;
+}
+.pdf-card .head .det {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pdf-card .head .det .pd-lft {
+  padding-left: 30px;
+}
+.pdf-card .head .det .txt-al-c {
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.pdf-card .head .det p {
+  padding: 8px 5px;
+  font-size: 11px;
+  color: #ffffff;
+}
+.pdf-card .head .det ._icon {
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  display: flex;
+  padding: 5px 5px;
+  background: #60b4ff;
+  align-items: center;
+  justify-content: center;
+}
+.pdf-card .head .det ._icon .sml {
+  width: 18px !important;
+  height: 18px !important;
+}
+.pdf-card .head .det ._icon .mid {
+  width: 40px !important;
+}
+.pdf-card .head .det ._icon figure {
+  width: 28px;
+  height: 28px;
+}
+.pdf-card .head .det ._icon figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.pdf-card .head .options {
+  width: 300px;
+  display: flex;
+  justify-content: right;
+  display: none;
+}
+.pdf-card .head .options.active {
+  display: block;
+}
+.pdf-card .head .options .sub-menu {
+  z-index: 100;
+  position: absolute;
+  top: 32px;
+  left: 180px;
+  width: 163px;
+  background: #eee;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pdf-card .head .options .sub-menu .select {
+  padding: 5px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.pdf-card .head .options .sub-menu .select.no-bot {
+  margin-bottom: unset;
+}
+.pdf-card .head .options .sub-menu .select p {
+  font-size: 14px;
+}
+.pdf-card .head .options .sub-menu .select button {
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.pdf-card .head .options .sub-menu .select .icon figure {
+  width: 25px;
+}
+.pdf-card .head .options .sub-menu .select .icon figure img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.pdf-card .head .options .sub-menu .select:hover {
+  background: #ddd;
+  border-radius: 5px;
+}
+.pdf-card .pdf-item {
+  border: 1px solid #f1f0f5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-width: 300px;
+  min-height: 400px;
+}
+.pdf-card .pdf-item.mid {
+  min-width: 500px;
+  min-height: 600px;
+}/*# sourceMappingURL=style.css.map */
